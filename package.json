@@ -1,0 +1,34 @@
+{
+  "name": "tabby-plugin-sync",
+  "version": "0.1.0",
+  "description": "Keep your installed Tabby plugins in sync across machines through config.yaml",
+  "keywords": [
+    "tabby-plugin",
+    "sync",
+    "plugins",
+    "config-sync",
+    "syncthing"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolocalosso/tabby-plugin-sync.git"
+  },
+  "homepage": "https://github.com/paolocalosso/tabby-plugin-sync#readme",
+  "bugs": {
+    "url": "https://github.com/paolocalosso/tabby-plugin-sync/issues"
+  },
+  "author": "Paolo Calosso <paolo@oprtorino.net>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "*",
+    "tabby-core": "*",
+    "tabby-plugin-manager": "*",
+    "tabby-settings": "*"
+  }
+}
