@@ -1,6 +1,6 @@
 {
   "name": "tabby-plugin-sync",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Keep your installed Tabby plugins in sync across machines through config.yaml",
   "keywords": [
     "tabby-plugin",

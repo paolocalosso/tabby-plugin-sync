@@ -50,8 +50,10 @@ the next save.
 With **Reload config.yaml when it changes on disk** turned on (the
 default), this plugin watches the file and reloads Tabby's config when it
 changes, so those changes are picked up live and no longer get lost. It
-also re-reads the file before every sync. Encrypted configs are never
-reloaded automatically, since that would ask for the password each time.
+also re-reads the file before every sync. If `config.yaml` is a symlink
+into a synced dotfiles folder, the plugin watches the real file. Encrypted
+configs are never reloaded automatically, since that would ask for the
+password each time.
 
 ## How it works
 

@@ -453,6 +453,11 @@ class PluginSyncService {
             configPath = this.platform.getConfigPath()
         } catch { }
         if (!configPath) return
+        // config.yaml is often a symlink into a synced dotfiles folder: a sync
+        // tool updates the real file there, so watch the target's folder
+        try {
+            configPath = fs.realpathSync(configPath)
+        } catch { }
         const dir = path.dirname(configPath)
         const base = path.basename(configPath)
         try {
